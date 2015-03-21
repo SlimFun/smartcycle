@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SmartCycle</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_send_dynamic_info">SendDynamicInfoActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_call_back">CallBackActivity</string>
+    <string name="title_activity_change_user_name">ChangeUserNameActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string name="title_activity_change_telphone">ChangeTelphoneActivity</string>
+    <string name="title_activity_change_describe">ChangeDescribeActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_action_detail">ActionDetailActivity</string>
+
+</resources>

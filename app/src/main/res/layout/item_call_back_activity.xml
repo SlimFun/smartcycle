@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color">
+
+        <TextView
+            android:id="@+id/acti_call_back_item_floors"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/floors_background"
+            android:textSize="12dp"
+            android:text="1楼"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            />
+
+    <TextView
+        android:id="@+id/acti_call_back_item_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="哈哈"
+        android:layout_toRightOf="@+id/acti_call_back_item_floors"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/male_user_shape"
+        android:textColor="#FFFFFF"
+        android:textSize="11dp"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/acti_call_back_item_callback"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/callback"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"/>
+
+    <TextView
+        android:id="@+id/acti_call_back_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="content"
+        android:layout_alignLeft="@+id/acti_call_back_item_username"
+        android:layout_below="@+id/acti_call_back_item_username"
+        android:textSize="15dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"/>
+
+    <LinearLayout
+        android:id="@+id/acti_call_back_item_ll_callback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E7E8EA"
+        android:layout_marginTop="3dp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_alignLeft="@+id/acti_call_back_item_content"
+        android:layout_below="@+id/acti_call_back_item_content">
+        <TextView
+            android:id="@+id/acti_call_back_item_callback_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="哈哈哈哈"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/acti_call_back_item_ll_callback"
+        android:layout_alignLeft="@+id/acti_call_back_item_username"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/local"
+            />
+        <TextView
+            android:id="@+id/acti_call_back_item_attrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="attrs"
+            android:layout_gravity="center_vertical"
+            android:textSize="13dp"/>
+        <TextView
+            android:id="@+id/acti_call_back_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:textSize="13dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

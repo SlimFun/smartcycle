@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.codetail.widget.RevealFrameLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<ImageView-->
+            <!--android:scaleType="fitXY"-->
+            <!--android:id="@+id/image_content"-->
+            <!--android:src="@drawable/content_films"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/background_color">
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="48dp"-->
+                <!--android:background="@color/background_actionBar">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="SmartCycle"-->
+                    <!--android:textColor="@color/text_color"-->
+                    <!--android:textSize="22sp"-->
+                    <!--android:layout_centerHorizontal="true"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.ecloud.pulltozoomview.PullToZoomListViewEx
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/fragment_main_listView"
+                    android:divider="@null"
+                    custom:headerView="@layout/profile_head_view"
+                    custom:zoomView="@layout/list_head_zoom_view"
+                    android:layout_marginTop="49dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    ></com.ecloud.pulltozoomview.PullToZoomListViewEx>.
+
+                <include
+                    android:id="@+id/textView_empty"
+                    layout="@layout/empty_view"></include>
+
+                <RelativeLayout
+                    android:id="@+id/fragment_main_rl_edti_info"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/edit_dynamic_info_selector">
+
+                    <ImageView
+                        android:id="@+id/fragment_main_iv_edit_info"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/ic_action_edit_light"
+                        />
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</io.codetail.widget.RevealFrameLayout>

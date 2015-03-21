@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    app:cardCornerRadius="4dp" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:background="@drawable/dynamic_info_list_selector"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <com.example.yh.view.NetworkCircleImageView
+                    android:id="@+id/iv_item_face"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/a1"
+            />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="7dp">
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/tv_item_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="来自火星的骑行者"
+                        android:textColor="#ffffff"
+                        />
+                    <TextView
+                        android:layout_below="@+id/tv_item_username"
+                        android:id="@+id/tv_item_attrs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="大理"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_item_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="1分钟前"
+                    android:gravity="right|center_vertical"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/iv_item_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/test1"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/tv_item_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="快来一起骑行吧"
+                    android:textSize="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="#ffffff"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp">
+
+                <ImageView
+                    android:id="@+id/item_mainfragment_iv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/local"/>
+
+                <TextView
+                    android:id="@+id/item_mainfragment_tv_local"
+                    android:layout_toRightOf="@+id/item_mainfragment_iv_local"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="西安电子科技大学南校区"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:id="@+id/item_mainfragment_tv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详情 >>"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/divider_color"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                >
+
+               <LinearLayout
+                   android:id="@+id/ll_item_send_message"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1"
+                   android:orientation="horizontal"
+                   android:gravity="center"
+                   >
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal"
+                       >
+
+                       <ImageView
+                           android:id="@+id/iv_item_message"
+                           android:layout_width="30dp"
+                           android:layout_height="30dp"
+                           android:src="@drawable/message_male"/>
+
+                       <TextView
+                           android:id="@+id/tv_item_sendMsg"
+                           android:layout_width="wrap_content"
+                           android:layout_height="match_parent"
+                           android:text="发信息"
+                           android:gravity="center"
+                           />
+
+                   </LinearLayout>
+               </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#CDCDCD"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_call_back"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/callback"/>
+
+                        <TextView
+                            android:id="@+id/tv_item_callback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="回复"
+                            android:gravity="center"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="#CDCDCD"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_item_supports"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iv_item_supports"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/supports_unselected"/>
+
+                        <TextSwitcher
+                            android:id="@+id/fragment_main_ts_support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:inAnimation="@anim/slide_in_ts_support"
+                            android:layout_marginLeft="2dp"
+                            android:outAnimation="@anim/slide_out_ts_support">
+
+                            <TextView
+                                android:id="@+id/fragment_main_textview_supports"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="4"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_gravity="center_vertical"/>
+                        </TextSwitcher>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

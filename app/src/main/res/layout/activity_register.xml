@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.yh.activity.RegisterActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/background_actionBar"
+        >
+
+        <TextView
+            android:id="@+id/acti_register_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="7dp"
+            android:textColor="@color/text_color"
+            android:text="返回"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="注册"
+            android:textColor="@color/text_color"
+            android:textSize="22sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="账号"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"/>
+        <EditText
+            android:id="@+id/acti_register_editText_accountNum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:hint="账号"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/edittext"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/divide_line"
+        />
+
+    <LinearLayout
+        android:id="@+id/acti_register_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="性别"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            />
+
+        <RadioGroup
+            android:id="@+id/acti_register_gender_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/acti_register_male_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="16sp"
+                android:textColor="@color/text_color"
+                 />
+
+            <RadioButton
+                android:id="@+id/acti_register_female_radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/acti_register_divider1"
+        style="@style/divide_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="36dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="密码"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/acti_register_editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:inputType="textPassword"
+            android:hint="6-30位字母或数字"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:background="@drawable/edittext"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/divide_line"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="确认密码"
+            android:textColor="@color/text_color"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/acti_register_editText_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:hint="6-30位字母或数字"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:background="@drawable/edittext"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/acti_register_register_btn"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="注册"
+            android:textColor="@color/text_color"
+            android:background="@color/background_actionBar"
+            />
+        <ProgressBar
+            android:id="@+id/acti_register_register_pb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</LinearLayout>

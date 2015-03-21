@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="7dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.yh.view.NetworkCircleImageView
+            android:id="@+id/fragment_friends_iv_user_face"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/a1"
+            android:layout_marginBottom="5dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp">
+        <TextView
+            android:id="@+id/fragment_friends_tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="username"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/fragment_friends_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fragment_friends_tv_username"
+            android:text="content"
+            android:layout_marginTop="6dp"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/fragment_friends_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="time"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2dp"/>
+    </RelativeLayout>
+</LinearLayout>
