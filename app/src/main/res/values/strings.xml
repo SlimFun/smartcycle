@@ -16,5 +16,6 @@
     <string name="title_activity_change_describe">ChangeDescribeActivity</string>
     <string name="title_activity_home">HomeActivity</string>
     <string name="title_activity_action_detail">ActionDetailActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
